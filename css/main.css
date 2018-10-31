@@ -1,5 +1,5 @@
 
-.social-icons a {
+.styled-social-icons a {
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
@@ -13,5 +13,6 @@
 }
 
 .footer {
-  display:flex;
+    display:flex;
 }
+
