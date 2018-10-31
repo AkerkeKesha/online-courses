@@ -9,6 +9,7 @@ using Bootstrap 4
 * Jumbotron to greet users
 * Top 3 courses 
 * The footer with social media buttons
+* HW15 update: added custom.js to show content for learn more buttons
 
 
 
