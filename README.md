@@ -9,7 +9,9 @@ using Bootstrap 4
 * Jumbotron to greet users
 * Top 3 courses 
 * The footer with social media buttons
-* HW15 update: added custom.js to show content for learn more buttons
+* HW15: added custom.js to show content for learn more buttons
+* HW17: schedule.html included to show table of courses per date
+* HW21: custom.js refactored according to ES6 syntax
 
 
 
