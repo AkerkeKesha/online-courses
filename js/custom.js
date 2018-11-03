@@ -1,19 +1,9 @@
-
-var collapsible = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < collapsible.length; i++) {
-  collapsible[i].addEventListener("click", function() {
-
-    this.classList.toggle("active");
-
-    var content = this.parentElement.nextElementSibling;
-    console.log(content);
-
-    if (content.style.display === "block"){
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+Array.from(document.getElementsByClassName("collapsible")).forEach(
+    collapsible => collapsible.addEventListener("click", () => {
+        collapsible.classList.toggle("active");
+        const content = collapsible.parentElement.nextElementSibling;
+        console.log(content);
+        content.style.display = content.style.display === "block"
+            ? "none": "block";
+  })
+);

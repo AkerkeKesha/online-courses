@@ -1,36 +1,41 @@
-
 .styled-social-icons a {
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
-    color: #495057 !important;
-    text-align: center;
     border-radius: 100%;
-    font-size: 1.5rem;
-    line-height: 3.5rem;
     margin-right: 1rem;
+
+    color: #495057 !important;
+
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 3.5rem;
 }
 
 .collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    outline: none;
+
+    background-color: #777;
+    color: white;
+
+    font-size: 15px;
+    text-align: left;
+
+    cursor: pointer;
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
 .content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
+    display: none;
 
+    overflow: hidden;
+    padding: 0 18px;
+
+    background-color: #f1f1f1;
+}
