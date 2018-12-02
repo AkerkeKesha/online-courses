@@ -1,5 +1,6 @@
 import 'bootstrap';
 import style from "./main.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 Array.from(document.getElementsByClassName("collapsible")).forEach(
     collapsible => collapsible.addEventListener("click", () => {

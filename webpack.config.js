@@ -26,10 +26,19 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    proxy: {
+      '/api': 'http://localhost:3000'
+    }
+  },
   plugins:[
     new HtmlWebPackPlugin({
         template: "./src/index.html",
         filename: "./index.html"
+    }),
+    new HtmlWebPackPlugin({
+        template: "./src/schedule.html",
+        filename: "./schedule.html"
     }),
     new MiniCssExtractPlugin({
         filename: "[name].css",

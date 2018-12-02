@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "proxy": "webpack-dev-server"
   },
   "dependencies": {
     "bootstrap": "4.1.3",
