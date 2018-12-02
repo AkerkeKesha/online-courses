@@ -1,3 +1,6 @@
+import 'bootstrap';
+import style from "./main.css";
+
 Array.from(document.getElementsByClassName("collapsible")).forEach(
     collapsible => collapsible.addEventListener("click", () => {
         collapsible.classList.toggle("active");
