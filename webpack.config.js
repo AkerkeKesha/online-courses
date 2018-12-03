@@ -40,6 +40,14 @@ module.exports = {
         template: "./src/schedule.html",
         filename: "./schedule.html"
     }),
+    new HtmlWebPackPlugin({
+        template: "./src/login.html",
+        filename: "./login.html"
+    }),
+    new HtmlWebPackPlugin({
+        template: "./src/register.html",
+        filename: "./register.html"
+    }),
     new MiniCssExtractPlugin({
         filename: "[name].css",
         chunkFilename: "[id].css"
