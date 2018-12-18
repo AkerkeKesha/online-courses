@@ -1,8 +1,6 @@
 
-$("#btnLogin").click(function(event) {
-  console.log("login!");
-  //Fetch form to apply custom Bootstrap validation
-  var form = $("#formLogin")
+$('#btnLogin').click(function(event) {
+  var form = $('#formLogin')
 
   if (form[0].checkValidity() === false) {
     event.preventDefault()

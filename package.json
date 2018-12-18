@@ -25,11 +25,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AkerkeKesha/online-courses.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AkerkeKesha/online-courses/issues"
-  },
-  "homepage": "https://github.com/AkerkeKesha/online-courses#readme"
+  }
 }
