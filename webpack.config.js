@@ -1,30 +1,25 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 
 module.exports = {
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
         }
-      },
-      {
+      },{
         test: /\.html$/,
-        use: [
-            {
+        use: [{
                 loader: 'html-loader',
                 options: { minimize: true }
-            }
-        ]
-      },
-      {
+            }]
+      },{
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader']
-      }
-    ]
+      }]
   },
   devServer: {
     proxy: {
@@ -33,19 +28,19 @@ module.exports = {
   },
   plugins:[
     new HtmlWebPackPlugin({
-        template: './src/index.html',
-        filename: './index.html'
+        template: path.join(__dirname, 'src/index.html'),
+        filename: 'index.html'
     }),
     new HtmlWebPackPlugin({
-        template: './src/schedule.html',
+        template: path.join(__dirname, 'src/schedule.html'),
         filename: './schedule.html'
     }),
     new HtmlWebPackPlugin({
-        template: './src/login.html',
+        template: path.join(__dirname, 'src/login.html'),
         filename: './login.html'
     }),
     new HtmlWebPackPlugin({
-        template: './src/register.html',
+        template: path.join(__dirname, 'src/register.html'),
         filename: './register.html'
     }),
     new MiniCssExtractPlugin({
